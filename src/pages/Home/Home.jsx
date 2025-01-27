@@ -22,17 +22,18 @@ export default function Home(){
                             buttonName={"Mobile App Consultation"}/>
                 <img src={app} alt="" className="app-pic"/> 
             </div>
+            
             <h1 className="section-header">already have a website or mobile app?</h1>
             <div className="extra-cards">
-                <ExtraCard cardIcon = {"troubleshoot"}
-                           cardHeader = {"Web/Mobile App TroubleShooting"}
-                           cardDesc = {"Having issues with your website or mobile app? Let us fix it for you with our diagnostic test."}
+                <ExtraCard cardIcon={"troubleshoot"}
+                           cardHeader={"Web/Mobile App TroubleShooting"}
+                           cardDesc={"Having issues with your website or mobile app? Let us fix it for you with our diagnostic test."}
                            cardButton={"Troubleshoot my app"} />
 
-                <ExtraCard cardIcon = {"developer_board"}
-                           cardHeader = {"Feature Development and Intergration"}
-                           cardDesc = {"Expand your applications horizons by adding new features to make for a better user experience."}
-                           cardButton={"Troubleshoot my app"}/>
+                <ExtraCard cardIcon={"developer_board"}
+                           cardHeader={"Feature Development and Intergration"}
+                           cardDesc={"Expand your applications horizons by adding new features to make for a better user experience."}
+                           cardButton={"Develop a Feature"}/>
             </div>
 
         </>
