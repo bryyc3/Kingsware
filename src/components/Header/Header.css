@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+.header{
+    text-align: center;
+}
+
+.titles-cont{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.title{
+    font-family: "Ballet", serif;
+    font-weight: 100;
+    font-size: 9em;
+    color: rgb(220, 220, 74);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-family: "EB Garamond", serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: azure;
+    margin-top: -100px;
+    margin-left: 400px;
+    text-transform: uppercase;
+}
+
+.page-link{
+    font-family: "DM Sans", serif;
+    font-weight: 200;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: azure;
+    vertical-align: 30px;
+}

@@ -1,14 +1,15 @@
 import './Header.css'
 
-function Header(){
+export default function Header(){
     return(
-        <>
-        <a href="">About</a>
-        <h1>Kingsware</h1>
-        <h2>Establish Your Online Presence</h2>
-        <a href="">Pricing</a>
-        </>
+        <div className="header">
+            <a href="" className="page-link">About</a>
+            <div className="titles-cont">
+                <h1 className="title">Kingsware</h1>
+                <h2 className="subtitle">Establish your online presence</h2>
+            </div>
+            <a href="" className="page-link">Consultation</a>
+        </div>
     )
 }
 
-export default Header

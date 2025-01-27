@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-header{
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    color: azure;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 90px;
+}
+
+.software-card{
+    background-color: hsl(148, 94%, 12%);
+    border-radius: 25px;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    height: 229px;
+    color: azure;
+    text-align: center;
+    font-family: "DM Sans", serif;
+}
+
+.web-card{
+    margin-left: 90px;
+}
+.app-card{
+    margin-left: auto;
+    margin-right: 90px;
+}
+.website-pic{
+    height: 230px;
+    margin-left: -40px;
+}
+
+.app-pic{
+    height: 300px;
+    margin: -35px -10px 0 20px;
+}
+
+.extra-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px;
+}

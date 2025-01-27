@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&');
+
+.card-info{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px 0 30px; 
+}
+.header-line{
+    width: 8%;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    color: rgb(220, 220, 74);
+}
+.card-header{
+    margin: 20px auto 5px auto;
+    font-size: 2em;
+    max-width: fit-content;
+    display: inline-block;
+}
+.card-description{
+    margin: auto;
+    font-weight: 200;
+    font-size: 1.35em;
+    width: 500px;
+}
+
+.consult-button{
+    border: none;
+    border-radius: 25px;
+    background-color: #4d1baa;
+    color: azure;
+    font-size: 1.2em;
+    padding: 12px;
+    margin-top: 15px;
+}
