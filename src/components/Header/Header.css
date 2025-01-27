@@ -9,6 +9,16 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.main-title{
+    display: inline;
+    font-family: "DM Sans", serif;
+    font-size: 6em;
+    font-weight: 200;
+    text-decoration: none;
+    color: azure;
+    margin: 0 100px 0 100px;
+}
 .title{
     font-family: "Ballet", serif;
     font-weight: 100;
@@ -35,4 +45,12 @@
     text-decoration: none;
     color: azure;
     vertical-align: 30px;
+}
+
+.side-page-link{
+    font-family: "DM Sans", serif;
+    font-weight: 200;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: azure;
 }

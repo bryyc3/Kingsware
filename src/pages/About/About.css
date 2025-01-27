@@ -1,0 +1,27 @@
+.about-header{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: rgb(220, 220, 74);
+    text-align: center;
+    margin-top: 60px;
+}
+.about-subtitle{
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: rgb(220, 220, 74);
+}
+.about-description{
+    color: azure;
+    text-align: center;
+    margin: auto;
+    font-family: "DM Sans", serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    width: 950px;
+}
