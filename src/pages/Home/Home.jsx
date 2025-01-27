@@ -11,8 +11,8 @@ export default function Home(){
             <Header currentPage={"home"}
                     page1={"About"}
                     page2={"Consult"}
-                    link1={"https://solid-adventure-7v5w965wr54fw6rp-5173.app.github.dev/about"}
-                    link2={"https://solid-adventure-7v5w965wr54fw6rp-5173.app.github.dev/consult"}/>
+                    link1={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/about"}
+                    link2={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/consult"}/>
 
             <h1 className="section-header">software solutions tailored to your business</h1>
             <div className="software-card web-card">

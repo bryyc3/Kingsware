@@ -8,8 +8,8 @@ export default function About(){
             <Header currentPage={"About"}
                     page1={"Home"}
                     page2={"Consult"}
-                    link1={"https://solid-adventure-7v5w965wr54fw6rp-5173.app.github.dev/"}
-                    link2={"https://solid-adventure-7v5w965wr54fw6rp-5173.app.github.dev/consult"}/>
+                    link1={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/"}
+                    link2={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/"}/>
 
             <h1 className="about-header">Helping businesses strive for greatness</h1>
             <p className="about-description">
@@ -24,7 +24,7 @@ export default function About(){
                 but we do not limit ourselves. Whatever you need done, we will accomplish.
             </p>
             <div>
-                <ExpandableIcon icon={language}/>
+                <ExpandableIcon icon={"language"}/>
             </div>
             <div>
                 <h2 className="about-subtitle">Ecaspulated elements in all projects</h2>
