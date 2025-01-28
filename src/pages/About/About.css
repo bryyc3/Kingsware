@@ -25,3 +25,10 @@
     font-size: 1.5em;
     width: 950px;
 }
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+}

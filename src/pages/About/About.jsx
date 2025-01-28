@@ -8,8 +8,8 @@ export default function About(){
             <Header currentPage={"About"}
                     page1={"Home"}
                     page2={"Consult"}
-                    link1={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/"}
-                    link2={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/"}/>
+                    link1={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/"}
+                    link2={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/"}/>
 
             <h1 className="about-header">Helping businesses strive for greatness</h1>
             <p className="about-description">
@@ -23,11 +23,13 @@ export default function About(){
                 At Kingsware we center our projects around building websites and mobile applications,
                 but we do not limit ourselves. Whatever you need done, we will accomplish.
             </p>
-            <div>
-                <ExpandableIcon icon={"language"}/>
-            </div>
-            <div>
-                <h2 className="about-subtitle">Ecaspulated elements in all projects</h2>
+            <div className="icons-container">
+                <ExpandableIcon icon={"computer"}
+                                iconName={"Website"}/>
+                <ExpandableIcon icon={"smartphone"}
+                                iconName={"Mobile App"}/>
+                <ExpandableIcon icon={"extension"}
+                                iconName={"Features"}/>
             </div>
         </>
         

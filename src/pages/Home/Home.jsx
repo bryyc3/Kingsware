@@ -11,8 +11,8 @@ export default function Home(){
             <Header currentPage={"home"}
                     page1={"About"}
                     page2={"Consult"}
-                    link1={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/about"}
-                    link2={"https://animated-fortnight-x55rqqwr74p9fpvv4-5173.app.github.dev/consult"}/>
+                    link1={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/about"}
+                    link2={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/consult"}/>
 
             <h1 className="section-header">software solutions tailored to your business</h1>
             <div className="software-card web-card">
@@ -33,7 +33,7 @@ export default function Home(){
                 <ExtraCard cardIcon={"troubleshoot"}
                            cardHeader={"Web/Mobile App TroubleShooting"}
                            cardDesc={"Having issues with your website or mobile app? Let us fix it for you with our diagnostic test."}
-                           cardButton={"Troubleshoot my app"} />
+                           cardButton={"Diagnose"} />
 
                 <ExtraCard cardIcon={"developer_board"}
                            cardHeader={"Feature Development and Intergration"}
