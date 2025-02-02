@@ -11,22 +11,25 @@ export default function Home(){
             <Header currentPage={"home"}
                     page1={"About"}
                     page2={"Consult"}
-                    link1={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/about"}
-                    link2={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/consult"}/>
+                    link1={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/about"}
+                    link2={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/consultation"}/>
 
             <h1 className="section-header">software solutions tailored to your business</h1>
-            <div className="software-card web-card">
-                <img src={atlantic_fitness} alt="" className="website-pic"/> 
-                <CardInfo cardHeader ={"Fully Responsive Website"}
-                          cardDesc={"No matter what your website is being created for, rest assured it will be carefully developed to fit any screen size, have the best SEO and beautiful design."} 
-                          buttonName={"Website Consultation"}/>
+            <div className="cards-container">
+                <div className="software-card web-card">
+                    <img src={atlantic_fitness} alt="" className="website-pic"/> 
+                    <CardInfo cardHeader ={"Fully Responsive Website"}
+                            cardDesc={"No matter what your website is being created for, rest assured it will be carefully developed to fit any screen size, have the best SEO and beautiful design."} 
+                            buttonName={"Website Consultation"}/>
+                </div>
+                <div className="software-card app-card">
+                    <CardInfo cardHeader ={"Mobile Application"}
+                                cardDesc={"Your mobile app will have a design centered around user friendliness. Easy to use, easy to rely on and easy on the eyes."} 
+                                buttonName={"Mobile App Consultation"}/>
+                    <img src={app} alt="" className="app-pic"/> 
+                </div>
             </div>
-            <div className="software-card app-card">
-                <CardInfo cardHeader ={"Mobile Application"}
-                            cardDesc={"Your mobile app will have a design centered around user friendliness. Easy to use, easy to rely on and easy on the eyes."} 
-                            buttonName={"Mobile App Consultation"}/>
-                <img src={app} alt="" className="app-pic"/> 
-            </div>
+            
             
             <h1 className="section-header">already have a website or mobile app?</h1>
             <div className="extra-cards">

@@ -7,9 +7,9 @@ export default function About(){
         <>
             <Header currentPage={"About"}
                     page1={"Home"}
-                    page2={"Consult"}
-                    link1={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/"}
-                    link2={"https://jubilant-doodle-g44xwwqxj7v6396rp-5173.app.github.dev/"}/>
+                    page2={"Consultation"}
+                    link1={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/"}
+                    link2={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/consultation"}/>
 
             <h1 className="about-header">Helping businesses strive for greatness</h1>
             <p className="about-description">

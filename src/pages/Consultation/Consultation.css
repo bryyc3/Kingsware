@@ -1,0 +1,10 @@
+.consult-message{
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: azure;
+    text-align: center;
+    width: 80%;
+    margin: 100px auto 50px auto;
+}

@@ -21,12 +21,13 @@
     font-family: "DM Sans", serif;
 }
 
+
 .web-card{
-    margin-left: 90px;
+    margin-left: 10%;
 }
 .app-card{
     margin-left: auto;
-    margin-right: 90px;
+    margin-right: 10%;
 }
 .website-pic{
     height: 230px;

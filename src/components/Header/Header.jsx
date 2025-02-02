@@ -1,7 +1,7 @@
 import './Header.css'
 
 export default function Header({currentPage, page1, page2, link1, link2}){
-    if(currentPage === "About" || currentPage === "Consult"){
+    if(currentPage === "About" || currentPage === "Consultation"){
         return(
             <div className="header">
                 <a href={link1} className="side-page-link">{page1}</a>
