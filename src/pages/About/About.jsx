@@ -8,8 +8,8 @@ export default function About(){
             <Header currentPage={"About"}
                     page1={"Home"}
                     page2={"Consultation"}
-                    link1={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/"}
-                    link2={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/consultation"}/>
+                    link1={"http://localhost:5173/"}
+                    link2={"http://localhost:5173/consultation"}/>
 
             <h1 className="about-header">Helping businesses strive for greatness</h1>
             <p className="about-description">

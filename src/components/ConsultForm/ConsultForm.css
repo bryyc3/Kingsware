@@ -1,0 +1,49 @@
+.consult-form{
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.labels-container{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.form-label{
+    display: block;
+    font-size: 2em;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 1.5em;
+}
+
+.form-input{
+    border: none;
+    background-color: #549657bb;
+    border-radius: 10px;
+}
+.normal-input{
+    height: 50px;
+    width: 300px;
+}
+.large-input{
+    height: 100px;
+    width: 100%;
+}
+
+.submit-form-cont{
+    margin: 30px auto;
+    width: fit-content;
+}
+.submit-form{
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #4d1baa;
+    color: azure;
+    padding: 12px;
+}

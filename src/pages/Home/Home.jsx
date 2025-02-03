@@ -11,8 +11,8 @@ export default function Home(){
             <Header currentPage={"home"}
                     page1={"About"}
                     page2={"Consult"}
-                    link1={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/about"}
-                    link2={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/consultation"}/>
+                    link1={"http://localhost:5173/about"}
+                    link2={"http://localhost:5173/consultation"}/>
 
             <h1 className="section-header">software solutions tailored to your business</h1>
             <div className="cards-container">

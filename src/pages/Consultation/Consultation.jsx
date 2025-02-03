@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header"
+import ConsultForm from "../../components/ConsultForm/ConsultForm"
 import "./Consultation.css"
 
 export default function Consultation(){
@@ -7,16 +8,11 @@ export default function Consultation(){
             <Header currentPage={"Consultation"}
                                 page1={"Home"}
                                 page2={"About"}
-                                link1={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/"}
-                                link2={"https://fictional-barnacle-q77vggqvjx9934774-5173.app.github.dev/About"}/>
+                                link1={"http://localhost:5173/"}
+                                link2={"http://localhost:5173/About"}/>
             
-            <p className="consult-message">For a free consultation provide your business/personal name, email and details about the consultation</p>
-            <form action="">
-                <li>Name</li>
-                <li>Name</li>
-                <li>Name</li>
-                <li>Name</li>
-            </form>
+            <p className="consult-message">provide your business/personal name, email and details about the consultation</p>
+            <ConsultForm />
         </>
     )
 }
