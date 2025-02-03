@@ -11,7 +11,7 @@ export default function Consultation(){
                                 link1={"http://localhost:5173/"}
                                 link2={"http://localhost:5173/About"}/>
             
-            <p className="consult-message">provide your business/personal name, email and details about the consultation</p>
+            <p className="consult-message">provide your business or personal name, email and details about the consultation</p>
             <ConsultForm />
         </>
     )

@@ -14,12 +14,18 @@ export default function ConsultForm(){
                 </div>
                 <div>
                     <label htmlFor="Category" className="form-label">Category</label>
-                    <input type="text" className="form-input normal-input"/>
+                    <select type="text" className="form-input normal-input">
+                        <option value="choose" className="choose-option">Choose Category</option>
+                        <option value="website">Website</option>
+                        <option value="app">Mobile Application</option>
+                        <option value="feature">Web/Mobile Feature</option>
+                        <option value="troubleshooting">Troubleshooting</option>
+                    </select>
                 </div>
             </div>
             <div>
                 <label htmlFor="Description" className="form-label">Description</label>
-                <input type="text" className="form-input large-input"/>
+                <textarea type="text" className="form-input text-area"/>
             </div>
             <div className="submit-form-cont">
                 <input className="submit-form" type="submit" value="Submit"/>
