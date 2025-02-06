@@ -1,15 +1,30 @@
-import "./About.css"
 import Header from "../../components/Header/Header"
 import ExpandableIcon from "../../components/ExpandableIcon/ExpandableIcon.jsx"
+import "./About.css"
 
 export default function About(){
+    let expandDisplay = false;
+    let expandedIcon;
+
+    const aboutHeader = {currentPage: "About",
+                         page1: {name: "Home", link: "/"},
+                         page2: {name: "Consult", link: "/consultation"}}
+
+    const webIcon = {icon: "computer", iconName: "Website",
+                     iconDesc: "Websites support all devices and area  great way to get business in motion. No matter how simple or complicated your needs, a website can cover all grounds."};
+    const mobileIcon = {icon: "smartphone", iconName: "Mobile App",
+                        iconDesc: "An application specifically geared toward mobile users could be the way to go. Easy to access once downloaded on a user's device, but cannot be accessed through a PC."};
+    const featureIcon = {icon: "extension", iconName: "Features", 
+                         iconDesc: "Software that has already been deployed may need some modifications or updating. Kingsware can turn ideas for a feature into a reality, no matter how complex."};
+
+    function expandIcon(iconObj){
+        expandedIcon = iconObj;
+        expandDisplay != expandDisplay;
+    }
+
     return(
         <>
-            <Header currentPage={"About"}
-                    page1={"Home"}
-                    page2={"Consultation"}
-                    link1={"http://localhost:5173/"}
-                    link2={"http://localhost:5173/consultation"}/>
+            <Header headerInfo={aboutHeader}/>
 
             <h1 className="about-header">Helping businesses strive for greatness</h1>
             <p className="about-description">
@@ -24,13 +39,11 @@ export default function About(){
                 but we do not limit ourselves. Whatever you need done, we will accomplish.
             </p>
             <div className="icons-container">
-                <ExpandableIcon icon={"computer"}
-                                iconName={"Website"}/>
-                <ExpandableIcon icon={"smartphone"}
-                                iconName={"Mobile App"}/>
-                <ExpandableIcon icon={"extension"}
-                                iconName={"Features"}/>
+                <ExpandableIcon icon={webIcon} />
+                <ExpandableIcon icon={mobileIcon} />
+                <ExpandableIcon icon={featureIcon} />
             </div>
+            <div id='expanded-content'></div>
         </>
         
 

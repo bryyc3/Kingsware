@@ -6,13 +6,12 @@ import app from '../../assets/app.png'
 import './Home.css'
 
 export default function Home(){
+    const homeHeader = {currentPage: "home",
+                        page1: {name: "About", link: "/about"},
+                        page2: {name: "Consult", link: "/consultation"}}
     return(
         <>
-            <Header currentPage={"home"}
-                    page1={"About"}
-                    page2={"Consult"}
-                    link1={"http://localhost:5173/about"}
-                    link2={"http://localhost:5173/consultation"}/>
+            <Header headerInfo={homeHeader}/>
 
             <h1 className="section-header">software solutions tailored to your business</h1>
             <div className="cards-container">

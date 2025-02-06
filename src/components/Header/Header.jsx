@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
-export default function Header({currentPage, page1, page2, link1, link2}){
-    if(currentPage === "About" || currentPage === "Consultation"){
+export default function Header({headerInfo}){
+    if(headerInfo.currentPage === "About" || headerInfo.currentPage === "Consultation"){
         return(
             <div className="header">
-                <a href={link1} className="side-page-link">{page1}</a>
-                <h1 className="main-title">{currentPage}</h1>
-                <a href={link2} className="side-page-link">{page2}</a>
+                <Link to={headerInfo.page1.link} className="side-page-link">{headerInfo.page1.name}</Link>
+                <h1 className="main-title">{headerInfo.currentPage}</h1>
+                <Link to={headerInfo.page2.link} className="side-page-link">{headerInfo.page2.name}</Link>
             </div>
         )
     }
@@ -14,12 +15,12 @@ export default function Header({currentPage, page1, page2, link1, link2}){
     else{
         return(
             <div className="header">
-                <a href={link1} className="page-link">About</a>
+                <Link to={headerInfo.page1.link} className="page-link">About</Link>
                 <div className="titles-cont">
                     <h1 className="title">Kingsware</h1>
                     <h2 className="subtitle">Establish your online presence</h2>
                 </div>
-                <a href={link2} className="page-link">Consultation</a>
+                <Link to={headerInfo.page2.link} className="page-link">Consultation</Link>
             </div>
         )
     }

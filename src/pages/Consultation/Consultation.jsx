@@ -3,13 +3,13 @@ import ConsultForm from "../../components/ConsultForm/ConsultForm"
 import "./Consultation.css"
 
 export default function Consultation(){
+    const consultHeader = {currentPage: "Consultation",
+                           page1: {name: "Home", link: "/"},
+                           page2: {name: "About", link: "/about"}}
+    
     return(
         <>
-            <Header currentPage={"Consultation"}
-                                page1={"Home"}
-                                page2={"About"}
-                                link1={"http://localhost:5173/"}
-                                link2={"http://localhost:5173/About"}/>
+            <Header headerInfo={consultHeader}/>
             
             <p className="consult-message">provide your business or personal name, email and details about the consultation</p>
             <ConsultForm />
