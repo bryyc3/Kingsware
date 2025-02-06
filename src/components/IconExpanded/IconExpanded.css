@@ -1,4 +1,50 @@
 .expand-background{
-    background-color: #4d1baa;
-    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.expand-content{
+    justify-content: center;
+    background-color: hsl(261, 73%, 39%);
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+
+.close{
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 4em;
+    font-weight: 200;
+    color: azure;
+}
+
+.expand-details{
+    text-align: center;
+}
+.expand-icon{
+    display: block;
+    font-size: 7em;
+    color: rgb(220, 220, 74);
+}
+.expand-name{
+    font-family: "Montserrat", serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: azure;
+    text-align: center;
+}
+.expand-description{
+    font-family: "DM Sans", serif;
+    color: azure;
+    font-size: 2em;
+    font-weight: 200;
+    width: 60%;
+    margin: 20px auto 80px;
 }

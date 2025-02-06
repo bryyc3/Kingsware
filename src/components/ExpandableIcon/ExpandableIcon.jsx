@@ -5,11 +5,12 @@ import "./ExpandableIcon.css"
 export default function ExpandableIcon({icon}){
     const[expand, setExpand] = useState(false);
     function expandContent(){
+        document.getElementById("expand-container")
         setExpand(!expand);
     }
     return(
         <>
-            <div className="expandable-icon">
+            <div className="expandable-icon" id="expand-container">
                 <button className="material-symbols-outlined expand" onClick={expandContent}>expand_content</button>
                 <div className="icon-container">
                     <span className="material-symbols-outlined icon ">{icon.icon}</span>
