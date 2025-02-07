@@ -21,11 +21,15 @@
 
 
 .web-card{
-    margin-left: 10%;
+    animation: slide-web-card;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .app-card{
     margin-left: auto;
-    margin-right: 10%;
+    animation: slide-app-card;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .website-pic{
     height: 230px;
@@ -42,4 +46,21 @@
     justify-content: center;
     gap: 40px;
     margin: 70px;
+}
+
+@keyframes slide-web-card{
+    0%{
+
+    }
+    100%{
+        margin-left: 10%;
+    }
+}
+@keyframes slide-app-card{
+    0%{
+        
+    }
+    100%{
+        margin-right: 10%;
+    }
 }

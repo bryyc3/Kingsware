@@ -1,5 +1,8 @@
 .header{
     text-align: center;
+    animation: fade-in-title;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .titles-cont{
@@ -51,4 +54,13 @@
     font-size: 1.8em;
     text-decoration: none;
     color: azure;
+}
+
+@keyframes fade-in-title{
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
