@@ -19,12 +19,14 @@ export default function Home(){
                     <img src={atlantic_fitness} alt="" className="website-pic"/> 
                     <CardInfo cardHeader ={"Fully Responsive Website"}
                             cardDesc={"No matter what your website is being created for, rest assured it will be carefully developed to fit any screen size, have the best SEO and beautiful design."} 
-                            buttonName={"Website Consultation"}/>
+                            buttonName={"Website Consultation"}
+                            consultOption={"website"}/>
                 </div>
                 <div className="software-card app-card">
                     <CardInfo cardHeader ={"Mobile Application"}
                                 cardDesc={"Your mobile app will have a design centered around user friendliness. Easy to use, easy to rely on and easy on the eyes."} 
-                                buttonName={"Mobile App Consultation"}/>
+                                buttonName={"Mobile App Consultation"}
+                                consultOption={"app"}/>
                     <img src={app} alt="" className="app-pic"/> 
                 </div>
             </div>
@@ -35,12 +37,14 @@ export default function Home(){
                 <ExtraCard cardIcon={"troubleshoot"}
                            cardHeader={"Web/Mobile App TroubleShooting"}
                            cardDesc={"Having issues with your website or mobile app? Let us fix it for you with our diagnostic test."}
-                           cardButton={"Diagnose"} />
+                           cardButton={"Diagnose"} 
+                           consultOption={"troubleshooting"} />
 
                 <ExtraCard cardIcon={"developer_board"}
                            cardHeader={"Feature Development and Intergration"}
                            cardDesc={"Expand your applications horizons by adding new features to make for a better user experience."}
-                           cardButton={"Develop a Feature"}/>
+                           cardButton={"Develop a Feature"}
+                           consultOption={"feature"} />
             </div>
 
         </>

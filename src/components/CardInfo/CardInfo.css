@@ -26,6 +26,7 @@
 .consult-button{
     border: none;
     border-radius: 25px;
+    text-decoration: none;
     background-color: #4d1baa;
     color: azure;
     font-size: 1.2em;

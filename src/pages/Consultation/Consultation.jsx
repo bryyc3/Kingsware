@@ -5,7 +5,7 @@ import "./Consultation.css"
 export default function Consultation(){
     const consultHeader = {currentPage: "Consultation",
                            page1: {name: "Home", link: "/"},
-                           page2: {name: "About", link: "/about"}}
+                           page2: {name: "About", link: "/about"}};
     
     return(
         <>

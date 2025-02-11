@@ -8,7 +8,7 @@ export default function About(){
 
     const aboutHeader = {currentPage: "About",
                          page1: {name: "Home", link: "/"},
-                         page2: {name: "Consult", link: "/consultation"}}
+                         page2: {name: "Consultation", link: "/consultation"}}
 
     const webIcon = {icon: "computer", iconName: "Website",
                      iconDesc: "Websites support all devices and a great way to get business in motion. No matter how simple or complicated your needs, a website can cover all grounds."};
