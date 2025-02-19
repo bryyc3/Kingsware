@@ -19,7 +19,10 @@
     color: azure;
     font-size: 1.5em;
 }
-
+input::placeholder, textarea::placeholder{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.348);
+}
 .form-input{
     border: none;
     background-color: #549657bb;
@@ -42,7 +45,7 @@
     width: 100%;
 }
 
-.submit-form-cont{
+.submit-cont{
     margin: 30px auto;
     width: fit-content;
 }
