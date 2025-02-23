@@ -34,3 +34,9 @@
     margin-top: 15px;
     cursor: pointer;
 }
+
+@media(width <= 1200px){
+    .card-info{
+        display: block;
+    }
+}

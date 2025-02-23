@@ -1,7 +1,7 @@
 .extra-card{
     background-color: hsl(148, 94%, 12%);
     border-radius: 25px;
-    width: fit-content;
+    width: 60%;
     color: azure;
     text-align: center;
     font-family: "DM Sans", serif;
@@ -26,4 +26,10 @@
     font-size: 1.35em;
     width: 400px;
     height: 100px;
+}
+
+@media(width <= 1200px){
+    .extra-card{
+        margin: auto auto 40px;
+    }
 }

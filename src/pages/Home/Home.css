@@ -64,3 +64,30 @@
         margin-right: 10%;
     }
 }
+
+@media(width <= 1200px){
+    .software-card{
+        height: 40vh;
+        margin: 150px auto;
+        animation: none;
+        height: fit-content;
+        padding: 2em;
+    }
+    .app-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .website-pic, .app-pic{
+        margin: auto;
+        margin-top: -120px;
+    }
+    .app-pic{
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    .extra-cards{
+        display: block;
+        
+    }
+}

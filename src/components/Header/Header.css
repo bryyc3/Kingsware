@@ -56,11 +56,41 @@
     color: azure;
 }
 
+.menu{
+    display: none;
+    font-size: 4rem;
+    color: rgb(220, 220, 74);
+    background: none;
+    border: none;
+    margin: 20px 20px 0 auto;
+    cursor: pointer;
+}
+
+.sidebar{
+    display: none;
+}
 @keyframes fade-in-title{
     0%{
        opacity: 0;
     }
     100%{
         opacity: 1;
+    }
+}
+
+@media(width <= 1200px){
+    .page-link{
+        display: none;
+    }
+    .menu{
+        display: block;
+        
+    }
+
+}
+
+@media(width <= 840px){
+    .title{
+        font-size: 4rem;
     }
 }

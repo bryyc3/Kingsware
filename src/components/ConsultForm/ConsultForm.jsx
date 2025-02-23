@@ -30,12 +30,11 @@ export default function ConsultForm(){
     }
 
     async function SendRequest(emailInfo){
-       const emailRequest = await fetch('http://localhost:5000/',
+       const emailRequest = await fetch('https://refactored-garbanzo-4jjq997q597jhjjqw-5000.app.github.dev/',
         {
             method: 'POST',
             headers: { 'Content-Type' : 'application/json' },
-            body: JSON.stringify(emailInfo),
-            credentials: 'include'
+            body: JSON.stringify(emailInfo)
         });
 
         const response = (await emailRequest.json());

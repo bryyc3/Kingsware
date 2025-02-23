@@ -58,4 +58,5 @@ input::placeholder, textarea::placeholder{
     background-color: #4d1baa;
     color: azure;
     padding: 12px;
+    cursor:pointer;
 }

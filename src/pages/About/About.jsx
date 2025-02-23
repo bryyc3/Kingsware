@@ -11,7 +11,7 @@ export default function About(){
                          page2: {name: "Consultation", link: "/consultation"}}
 
     const webIcon = {icon: "computer", iconName: "Website",
-                     iconDesc: "Websites support all devices and a great way to get business in motion. No matter how simple or complicated your needs, a website can cover all grounds."};
+                     iconDesc: "Websites support all devices and are a great way to get business in motion. No matter how simple or complicated your needs, a website can cover all grounds."};
     const mobileIcon = {icon: "smartphone", iconName: "Mobile App",
                         iconDesc: "An application specifically geared toward mobile users could be the way to go. Easy to access once downloaded on a user's device, but cannot be accessed through a PC."};
     const featureIcon = {icon: "extension", iconName: "Features", 

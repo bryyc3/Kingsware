@@ -6,7 +6,7 @@ import app from '../../assets/app.png'
 import './Home.css'
 
 export default function Home(){
-    const homeHeader = {currentPage: "home",
+    const homeHeader = {currentPage: "Home",
                         page1: {name: "About", link: "/about"},
                         page2: {name: "Consult", link: "/consultation"}}
     return(
