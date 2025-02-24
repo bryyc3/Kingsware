@@ -4,6 +4,7 @@ import "./ExpandableIcon.css"
 
 export default function ExpandableIcon({icon}){
     const[expand, setExpand] = useState(false);
+    
     function expandContent(){
         document.getElementById(icon.icon).classList.add("shrink")
         setExpand(!expand);

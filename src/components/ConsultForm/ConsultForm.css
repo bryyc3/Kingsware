@@ -60,3 +60,14 @@ input::placeholder, textarea::placeholder{
     padding: 12px;
     cursor:pointer;
 }
+
+@media(width <= 1050px){
+    .labels-container{
+        display: block;
+        margin: 0;
+    }
+    .normal-input{
+        margin-bottom: 50px;
+        width: 80vw;
+    }
+}

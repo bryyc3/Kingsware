@@ -1,21 +1,42 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './Header.css'
 
 export default function Header({headerInfo}){
+    const [sidebar, setSidebar] = useState(false);
+
+   
+
+    function showMenu(){
+        setSidebar(!sidebar);
+    }
+
+    useEffect(() =>{
+        const sidebarElement = document.getElementById('sidebarElement');
+    
+        if(sidebar){
+            sidebarElement.style.display = 'block';
+        }
+        else{
+            sidebarElement.style.display = 'none';
+        }
+    })
+
     if(headerInfo.currentPage === "About" || headerInfo.currentPage === "Consultation"){
         return(
             <>
-                <button className='material--outlined menu'>menu</button>
+                <button className="material-symbols-outlined menu" onClick={ showMenu }>menu</button>
                 <div className="header">
                     <Link to={headerInfo.page1.link} className="side-page-link">{headerInfo.page1.name}</Link>
                     <h1 className="main-title">{headerInfo.currentPage}</h1>
                     <Link to={headerInfo.page2.link} className="side-page-link">{headerInfo.page2.name}</Link>
                 </div>
 
-                <div className="sidebar">
-                    <Link to={headerInfo.page1.link} className="side-page-link">{headerInfo.page1.name}</Link>
-                    <h1 className="main-title">{headerInfo.currentPage}</h1>
-                    <Link to={headerInfo.page2.link} className="side-page-link">{headerInfo.page2.name}</Link>
+                <div className="sidebar" id='sidebarElement'>
+                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>close</button>
+                    <Link to={headerInfo.page1.link} className="sidebar-link">Home</Link>
+                    <Link className="sidebar-link">About</Link>
+                    <Link to={headerInfo.page2.link} className="sidebar-link">Consultation</Link>
                 </div>
             </>
             
@@ -25,7 +46,7 @@ export default function Header({headerInfo}){
     else{
         return(
             <>
-                <button className='material-symbols-outlined menu'>menu</button>
+                <button className='material-symbols-outlined menu' onClick={ showMenu }>menu</button>
                 <div className="header">
                     <Link to={headerInfo.page1.link} className="page-link">About</Link>
                     <div className="titles-cont">
@@ -36,10 +57,11 @@ export default function Header({headerInfo}){
                     
                 </div>
 
-                <div className="sidebar">
-                    <Link to={headerInfo.page1.link} className="side-page-link">{headerInfo.page1.name}</Link>
-                    <h1 className="main-title">{headerInfo.currentPage}</h1>
-                    <Link to={headerInfo.page2.link} className="side-page-link">{headerInfo.page2.name}</Link>
+                <div className="sidebar" id='sidebarElement'>
+                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>close</button>
+                    <Link to={"/"} className="sidebar-link">Home</Link>
+                    <Link to={"/about"} className="sidebar-link">About</Link>
+                    <Link to={'/consultation'} className="sidebar-link">Consultation</Link>
                 </div>
             </>
             

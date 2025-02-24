@@ -7,7 +7,7 @@
     font-family: "DM Sans", serif;
 }
 .card-icon{
-    font-size: 6em;
+    font-size: 6rem;
     color: rgb(220, 220, 74);
 }
 .extra-info{
@@ -16,14 +16,14 @@
 
 .extra-header{
     margin: 20px auto 15px auto;
-    font-size: 2em;
+    font-size: 2rem;
     max-width: 60%;
 }
 
 .extra-desc{
     margin: auto auto 15px;
     font-weight: 200;
-    font-size: 1.35em;
+    font-size: 1.35rem;
     width: 400px;
     height: 100px;
 }
@@ -31,5 +31,32 @@
 @media(width <= 1200px){
     .extra-card{
         margin: auto auto 40px;
+        width: 90%;
+    }
+    .extra-header{
+        max-width: fit-content;
+    }
+    .extra-desc{
+        width: 80%;
+        height: fit-content;
+    }
+}
+
+@media(width <= 590px){
+    .extra-card{
+        width: 100%;
+    }
+
+    .card-icon{
+        font-size: 4rem;
+    }
+
+    .extra-header{
+        font-size: 1.4rem;
+    }
+
+    .extra-desc{
+        font-size: 1.2rem;
+        width: fit-content;
     }
 }

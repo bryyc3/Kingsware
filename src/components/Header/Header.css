@@ -20,13 +20,15 @@
     color: azure;
     margin: 0 100px 0 100px;
 }
+
 .title{
     font-family: "Ballet", serif;
     font-weight: 100;
     font-size: 9em;
     color: rgb(220, 220, 74);
-    margin-top: 0;
-    margin-bottom: 0;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
 }
 
 .subtitle{
@@ -79,18 +81,46 @@
 }
 
 @media(width <= 1200px){
-    .page-link{
+    .page-link, .side-page-link{
         display: none;
     }
     .menu{
         display: block;
         
     }
+    .titles-cont{
+        margin: 0;
+    }
+    .main-title{
+        margin: auto;
+    }
+    .title{
+        margin: auto;
+    }
 
 }
 
-@media(width <= 840px){
+@media(width <= 750px) {
     .title{
+        margin: 0;
+    }
+   .subtitle{
+        font-size: .85rem;
+        margin-top: -100px;
+        margin-left: 260px;
+   }
+}
+
+@media(width <= 590px){
+    .main-title{
         font-size: 4rem;
+    }
+    .title{
+        font-size: 6.75rem;
+    }
+    .subtitle{
+        margin-top: -75px;
+        margin-left: 200px;
+        font-size: .67rem;
     }
 }

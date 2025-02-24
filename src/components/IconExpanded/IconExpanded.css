@@ -13,7 +13,7 @@
     justify-content: center;
     background-color: hsl(261, 73%, 39%);
     border-radius: 15px;
-    width: 50%;
+    width: 70%;
     margin: auto;
     animation: expand-appear;
     animation-duration: 1s;
@@ -66,5 +66,16 @@
     }
     100%{
         scale:1;
+    }
+}
+
+
+@media(width <= 1000px){
+    .expand-content{
+        width: 90%;
+    }
+
+    .expand-description{
+        width: 70%;
     }
 }

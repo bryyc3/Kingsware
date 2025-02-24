@@ -3,7 +3,7 @@
     text-transform: uppercase;
     color: azure;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-top: 90px;
 }
 
@@ -68,10 +68,11 @@
 @media(width <= 1200px){
     .software-card{
         height: 40vh;
-        margin: 150px auto;
+        margin: 150px auto 20px;
         animation: none;
         height: fit-content;
-        padding: 2em;
+        padding-bottom: 2em;
+        width: 90%;
     }
     .app-card{
         display: flex;
@@ -81,6 +82,9 @@
         margin: auto;
         margin-top: -120px;
     }
+    .website-pic{
+        height: 200px;
+    }
     .app-pic{
         order: -1;
         margin-bottom: 0;
@@ -89,5 +93,19 @@
     .extra-cards{
         display: block;
         
+    }
+}
+
+@media(width <= 590px){
+    .section-header{
+        font-size: 1rem;
+        width: 60%;
+        margin: 60px auto;
+    }
+    .website-pic{
+        height: 120px;
+    }
+    .app-pic{
+        height: 180px;
     }
 }

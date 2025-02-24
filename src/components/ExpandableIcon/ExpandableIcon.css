@@ -33,17 +33,9 @@
     text-align: center;
 }
 
-.shrink{
-    animation: shrink-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes shrink-animation{
-    0%{
-
-    }
-    100%{
-        scale: -0;
+@media(width <= 1030px){
+    .expandable-icon{
+        width: fit-content;
+        margin: auto auto 60px;
     }
 }

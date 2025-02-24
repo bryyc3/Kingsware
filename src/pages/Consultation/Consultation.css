@@ -1,10 +1,17 @@
 .consult-message{
     font-family: "Montserrat", serif;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(220, 220, 74);
     text-align: center;
     padding: 5px;
     margin: 50px auto 50px auto;
+}
+
+
+@media(width <= 800px){
+    .consult-message{
+        font-size: 1.2rem;
+    }
 }
