@@ -33,10 +33,12 @@ export default function Header({headerInfo}){
                 </div>
 
                 <div className="sidebar" id='sidebarElement'>
-                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>close</button>
-                    <Link to={headerInfo.page1.link} className="sidebar-link">Home</Link>
-                    <Link className="sidebar-link">About</Link>
-                    <Link to={headerInfo.page2.link} className="sidebar-link">Consultation</Link>
+                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>arrow_back</button>
+                    <div className="sidebar-links">
+                        <Link to={"/"} className="sidebar-link">Home</Link>
+                        <Link to={"/about"} className="sidebar-link">About</Link>
+                        <Link to={'/consultation'} className="sidebar-link">Consultation</Link>
+                    </div>
                 </div>
             </>
             
@@ -58,10 +60,12 @@ export default function Header({headerInfo}){
                 </div>
 
                 <div className="sidebar" id='sidebarElement'>
-                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>close</button>
-                    <Link to={"/"} className="sidebar-link">Home</Link>
-                    <Link to={"/about"} className="sidebar-link">About</Link>
-                    <Link to={'/consultation'} className="sidebar-link">Consultation</Link>
+                    <button className='material-symbols-outlined close-menu' onClick={ showMenu }>arrow_back</button>
+                    <div className="sidebar-links">
+                        <Link to={"/"} className="sidebar-link">Home</Link>
+                        <Link to={"/about"} className="sidebar-link">About</Link>
+                        <Link to={'/consultation'} className="sidebar-link">Consultation</Link>
+                    </div>
                 </div>
             </>
             

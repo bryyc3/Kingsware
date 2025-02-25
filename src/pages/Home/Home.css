@@ -7,6 +7,11 @@
     margin-top: 90px;
 }
 
+.cards-container{
+    width: fit-content;
+    margin: auto;
+}
+
 .software-card{
     background-color: hsl(148, 94%, 12%);
     border-radius: 25px;
@@ -50,19 +55,20 @@
 
 @keyframes slide-web-card{
     0%{
-
+        margin-left: -100vw;
     }
     100%{
-        margin-left: 10%;
+        margin-left: -15vw;
     }
 }
 @keyframes slide-app-card{
     0%{
-        
+        margin-right: -100vw;
     }
     100%{
-        margin-right: 10%;
+        margin-right: -15vw;
     }
+    
 }
 
 @media(width <= 1200px){
