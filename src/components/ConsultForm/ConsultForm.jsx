@@ -9,6 +9,10 @@ export default function ConsultForm(){
     const [category, setCategory] = useState('');
     const [description, setDescription] = useState('');
 
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
+
+
     const location = useLocation();
     const state = location.state;//get category 
     
@@ -40,23 +44,31 @@ export default function ConsultForm(){
         const response = (await emailRequest.json());
 
         if (response.emailSent){
-            //clear input values
-            //let user know I was notified
+            setSuccess(!success);
         }
         else{
-            //display error
+           setError(!error);
         }
     }
 
     function SendEmail(e){
         e.preventDefault();
-        console.log(category)
-        const emailDetails = {name, email, category, description}
+        const emailDetails = {name, email, category, description};
         SendRequest(emailDetails);
     }//send email data to API
 
+    function ClearForm(){
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('select-menu').value = '';
+        document.getElementById('description').value = '';
+        setSuccess(!success);
+    }
+    function CloseError(){
+        setSuccess(!success);
+    }
+
     useEffect(() =>{
-        console.log(import.meta.env.VITE_SERVER)
         if(state != null){
             const selectOption = document.getElementById("select-menu");
             selectOption.value = state //automatically fill category if redirected from home page button
@@ -66,16 +78,26 @@ export default function ConsultForm(){
 
     return(
         <>
-            <div className="success-message">
-                <h1>Email Successfully Sent!</h1>
-                <p>Expect a response shortly!</p>
-                <button>OK</button>
-            </div>
-            <div className="error-message">
-                <h1>Uh-Oh!</h1>
-                <p>We've encountered an error trying to send your info. Please try again or contact us at: kingswaredev@gmail.com with your consultation</p>
-                <button>OK</button>
-            </div>
+            {success && 
+                <div className="popup-background">
+                    <div className="popup-message">
+                        <h1 className="popup-header success">Email Successfully Sent!</h1>
+                        <p className="popup-description">Expect a response shortly!</p>
+                        <button className="popup-button" onClick={ ClearForm }>OK</button>
+                    </div>
+                </div>
+                
+            }
+            {error &&
+                <div className="popup-background">
+                    <div className="popup-message">
+                        <h1 className="popup-header error">Uh-Oh!</h1>
+                        <p className="popup-description">We've encountered an error trying to send your info. <br /> Please try again or contact us at: kingswaredev@gmail.com </p>
+                        <button className="popup-button" onClick={ CloseError }>OK</button>
+                    </div>
+                </div>
+                
+            }
             <form action="" className="consult-form" onSubmit={ SendEmail }>
                 <div className="labels-container">
                     <div>
@@ -83,6 +105,7 @@ export default function ConsultForm(){
                         <input 
                             type="text" 
                             className="form-input normal-input" 
+                            id="name"
                             placeholder="Business/Personal Name"
                             onBlur={ NameEntered } required/>
                     </div>
@@ -91,6 +114,7 @@ export default function ConsultForm(){
                         <input 
                             type="email" 
                             className="form-input normal-input"
+                            id="email"
                             placeholder="Enter your email"
                             onBlur={ EmailEntered } required/>
                     </div>
@@ -109,7 +133,8 @@ export default function ConsultForm(){
                     <label htmlFor="Description" className="form-label">Description</label>
                     <textarea 
                         type="text" 
-                        className="form-input text-area" 
+                        className="form-input text-area"
+                        id="description"
                         placeholder="Enter Your Business or Personal Name"
                         onBlur={ DescriptionEntered } required/>
                 </div>
