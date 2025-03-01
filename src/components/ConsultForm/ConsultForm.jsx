@@ -34,6 +34,7 @@ export default function ConsultForm(){
     }
 
     async function SendRequest(emailInfo){
+        console.log(import.meta.env.VITE_SERVER)
        const emailRequest = await fetch(import.meta.env.VITE_SERVER,
         {
             method: 'POST',
