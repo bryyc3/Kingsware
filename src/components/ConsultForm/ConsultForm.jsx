@@ -42,7 +42,7 @@ export default function ConsultForm(){
         });
 
         const response = (await emailRequest.json());
-
+        console.log(response)
         if (response.emailSent){
             setSuccess(!success);
         }
@@ -65,7 +65,7 @@ export default function ConsultForm(){
         setSuccess(!success);
     }
     function CloseError(){
-        setSuccess(!success);
+        setError(!error);
     }
 
     useEffect(() =>{
