@@ -38,7 +38,8 @@ export default function ConsultForm(){
         {
             method: 'POST',
             headers: { 'Content-Type' : 'application/json' },
-            body: JSON.stringify(emailInfo)
+            body: JSON.stringify(emailInfo),
+            credentials: 'include'
         });
 
         const response = (await emailRequest.json());
