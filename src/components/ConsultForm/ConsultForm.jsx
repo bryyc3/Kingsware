@@ -34,7 +34,7 @@ export default function ConsultForm(){
     }
 
     async function SendRequest(emailInfo){
-       const emailRequest = await fetch('https://kingsware.dev/api/email',
+       const emailRequest = await fetch('https://kingsware-api.onrender.com/api/email',
         {
             method: 'POST',
             headers: { 'Content-Type' : 'application/json' },
