@@ -34,7 +34,7 @@ export default function ConsultForm(){
     }
 
     async function SendRequest(emailInfo){
-       const emailRequest = await fetch(import.meta.env.VITE_SERVER,
+       const emailRequest = await fetch('https://kingsware.dev/api/email',
         {
             method: 'POST',
             headers: { 'Content-Type' : 'application/json' },

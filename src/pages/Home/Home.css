@@ -31,7 +31,6 @@
     animation-fill-mode: forwards;
 }
 .app-card{
-    margin-left: auto;
     animation: slide-app-card;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -58,15 +57,15 @@
         margin-left: -100vw;
     }
     100%{
-        margin-left: -15vw;
+        margin-left: -1vw;
     }
 }
 @keyframes slide-app-card{
     0%{
-        margin-right: -100vw;
+        margin-left: 100vw;
     }
     100%{
-        margin-right: -15vw;
+        margin-left: 35vw;
     }
     
 }
