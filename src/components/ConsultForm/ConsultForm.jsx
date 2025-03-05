@@ -136,7 +136,7 @@ export default function ConsultForm(){
                         type="text" 
                         className="form-input text-area"
                         id="description"
-                        placeholder="Enter Your Business or Personal Name"
+                        placeholder="Extra details regarding consultation"
                         onBlur={ DescriptionEntered } required/>
                 </div>
                 <div className="submit-cont">
